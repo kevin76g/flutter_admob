@@ -325,7 +325,10 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class SecondScreen extends StatefulWidget {
-  const SecondScreen({Key? key, required this.title}) : super(key: key);
+  const SecondScreen({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
 
   final String title;
 
@@ -355,9 +358,12 @@ class _SecondScreenState extends State<SecondScreen> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: const Text(
-                'ユーザーが閉じるまで全画面に表示される広告です。ゲームのシーン切り替えや画面遷移のときなど、アプリの流れが自然に一時停止する場面で有効な広告です。予期しないタイミングでの表示や頻度が高いとユーザビリティを損なってしまうので注意が必要です。',
+                'ユーザーが閉じるまで全画面に表示される広告です。ゲームのシーン切り替えや画面遷移のときなど、アプリの流れが自然に一時停止する場面で有効な広告です。',
                 style: TextStyle(fontSize: 18.0, color: Colors.black),
               ),
+            ),
+            const SizedBox(
+              height: 30.0,
             ),
           ],
         ),
